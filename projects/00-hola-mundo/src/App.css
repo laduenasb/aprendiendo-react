@@ -47,10 +47,10 @@
 }
 
 .tw-followCard-button.is-following {
-  border: 1px solid #bbb;
-  background: transparent;
+  border: 1px solid red;
+  /* background: transparent;
   color: #fff;
-  width: 140px;
+  width: 140px; */
 }
 
 .tw-followCard-button.is-following:hover {

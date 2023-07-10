@@ -1,12 +1,23 @@
 import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard'
 export function App () {
-	const format = (userName) => `@${userName}`
+	const formattedUserName = (userName) => `@${userName}`
+
+	// const midudev = {isFollowing: true, userName: 'midudev', formattedUserName}
+	// const pheralb = {isFollowing: false, userName: 'pheralb', formattedUserName}
+	// const laduenasb = {isFollowing: false, userName: 'laurond', formattedUserName}
+	// const formattedUserName = <span>@midudev</span>
 	return (
 		<section className="App">
-			<TwitterFollowCard isFollowing formatUserName={format} userName="midudev" name="Miguel Angel Duran" />
-			<TwitterFollowCard isFollowing={false} formatUserName={format} userName="pheralb" name="Pablo Hernandez" />
-			<TwitterFollowCard isFollowing formatUserName={format} userName="vxvander" name="Vardenhart" />
+			<TwitterFollowCard isFollowing={false} formattedUserName={formattedUserName} userName="laurencio">
+				Luis Dueñas
+			</TwitterFollowCard>
+			<TwitterFollowCard isFollowing formattedUserName={formattedUserName} userName="midudev">
+				Miguel Angel Duran
+			</TwitterFollowCard>
+			<TwitterFollowCard isFollowing formattedUserName={formattedUserName} userName="cuates">
+				Pepito Perez
+			</TwitterFollowCard>
 		</section>
 	)
 }
